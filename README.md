@@ -1,11 +1,20 @@
 # Nim-Binding-Examples
 Example bindings for nim
+If you found this repo useful, consider giving it a star!
 
 # Build Instructions:
-- To change which example gets built, see .nimble file
 ```bash
 nimble build
-./built/main
+```
+
+## Manual Building:
+```bash
+gcc -x c -c csource/simple.c -o csource/simple.o
+nim --passL:"-L. -l:csource/simple.o" c source/simple.nim
+
+./source/simple
+
+rm source/simple csource/simple.o
 ```
 
 # C Type Equivalents 
