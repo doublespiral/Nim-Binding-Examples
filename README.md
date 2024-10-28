@@ -1,13 +1,12 @@
 # Nim-Binding-Examples
-Example bindings for nim
-If you found this repo useful, consider giving it a star!
+Example bindings for nim. If you found this repo useful, consider giving it a star!
 
-# Build Instructions:
+## Build Instructions:
 ```bash
 nimble build
 ```
 
-## Manual Building:
+### Manual Building:
 ```bash
 gcc -x c -c csource/simple.c -o csource/simple.o
 nim --passL:"-L. -l:csource/simple.o" c source/simple.nim
@@ -17,7 +16,7 @@ nim --passL:"-L. -l:csource/simple.o" c source/simple.nim
 rm source/simple csource/simple.o
 ```
 
-# C Type Equivalents 
+## C Type Equivalents 
 ```nim
 # number types #
 bits |     c types | nim proper equivalents
