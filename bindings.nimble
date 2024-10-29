@@ -8,9 +8,17 @@ srcDir        = "source"
 bin           = @["simple", "advanced", "lol"]
 binDir        = "built"
 
-const csource = "csource"
-
 
 # Dependencies
 
 requires "nim >= 2.2.0"
+
+# You might have some issues with installing futhark
+# clang is a requirement so if you dont have that on your system youll need to
+# get it
+#
+# because of this its disabled by default, if you wish to enable it simply
+# uncomment the lines below
+
+#bin.add("autobind")
+#requires "futhark"
