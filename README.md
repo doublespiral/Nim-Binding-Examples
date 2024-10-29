@@ -2,6 +2,7 @@
 Example bindings for nim. If you found this repo useful, consider giving it a star!
 
 ## Build Instructions:
+- To build the futhark example, uncomment the lines in the nimble file
 ```bash
 nimble build
 ```
