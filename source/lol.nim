@@ -4,7 +4,7 @@ int add(int a, int b)
 {
     return a + b;
 }
-#define c_code_end /*]# #*/
+#define c_code_end //]#
 
 #ifdef nim_code_start
 import os
